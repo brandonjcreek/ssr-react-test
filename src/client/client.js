@@ -1,8 +1,9 @@
 import React from "react"
-import Home from "./components/Home"
+import ReactDOM from "react-dom"
+import App from "./App"
 
-const App = () => (
-    <Home />
+ReactDOM.hydrate(
+    <App />, 
+    document.getElementById("root")
 )
 
-export default App
